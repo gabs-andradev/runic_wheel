@@ -1,0 +1,77 @@
+@font-face {
+    font-family: runes;
+    src: url("assets/RUNE.TTF");
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.circle {
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.letter {
+    font-family: runes;
+    width: 10%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background: #333;
+    color: #f0f0f0;
+    font-size: 16px;
+    position: absolute;
+    cursor: cell;
+    user-select: none;
+    touch-action: none;
+    font-weight: 900;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+#buttons-functions {
+    display: flex;
+}
+
+.act-button {
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.act-button:hover {
+    background-color: #34495e;
+}
+
+.act-button:active {
+    background-color: #1b2631;
+}
